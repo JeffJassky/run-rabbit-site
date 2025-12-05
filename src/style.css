@@ -1,7 +1,7 @@
 :root {
   font-family: 'Roboto', 'Syne', 'Lexend', 'Space Mono', system-ui, -apple-system, sans-serif;
   color: #121212;
-  background-color: #ff5400;
+  background-color: #b15606;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +16,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #ff5400;
+  background-color: #b15606;
   color: #121212;
 }
 

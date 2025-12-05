@@ -140,7 +140,7 @@ onBeforeUnmount(() => {
           <img
             src="/prison-bracelet.png"
             alt="Prison Bracelet"
-            class="w-full h-auto object-contain drop-shadow-2xl"
+            class="w-full h-auto object-contain bracelet-image"
           />
         </div>
         <div
@@ -148,7 +148,7 @@ onBeforeUnmount(() => {
         >
           <span
             :class="['inline-block font-mono bg-off-black text-off-white px-2 py-1 uppercase tracking-wide', 'text-sm tracking-[0.2em]']"
-            style="color:#ff5400; margin-left: -6rem;"
+            style="color:#b15606; margin-left: -6rem;"
             >Prisoner #92-8312</span
           >
         </div>
@@ -223,7 +223,7 @@ onBeforeUnmount(() => {
           <img
             src="/mallo-cups.webp"
             alt="Mallo Cup"
-            class="w-full h-auto object-contain drop-shadow-2xl"
+            class="w-full h-auto object-contain bracelet-image"
           />
         </div>
 
@@ -241,7 +241,7 @@ onBeforeUnmount(() => {
             class="relative w-full aspect-video bg-off-black shadow-2xl border-off-black"
           >
             <iframe
-              src="https://player.vimeo.com/video/1140979814?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              src="https://player.vimeo.com/video/1140979814?badge=0&autopause=0&player_id=0&app_id=58479&colors=430600,b15504,b15504,b15606"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
               title="Benji - Trailer"
@@ -249,7 +249,7 @@ onBeforeUnmount(() => {
             ></iframe>
           </div>
 
-          <div class="mt-12 flex justify-center">
+          <div class="mt-12 flex justify-center" v-if="false">
             <a
               href="#"
               @click.prevent="() => {}"
@@ -267,13 +267,11 @@ onBeforeUnmount(() => {
       <div class="flex flex-col">
         <section
           :id="sectionId.SYNOPSIS"
-          class="py-24 px-4 md:px-8 bg-off-black text-white"
+          class="py-24 px-4 md:px-8 bg-off-black text-prison"
         >
           <div class="container mx-auto max-w-4xl">
             <div class="mb-12 border-b-2 border-prison/30 pb-4">
-              <h2
-                class="font-syne font-black text-4xl md:text-6xl text-prison uppercase"
-              >
+              <h2 class="font-syne font-black text-4xl md:text-6xl  uppercase">
                 Synopsis
               </h2>
             </div>
@@ -342,7 +340,8 @@ onBeforeUnmount(() => {
 
           <div
             :id="sectionId.CONTACT"
-            class="flex-1 py-20 px-8 bg-white relative overflow-hidden"
+            class="flex-1 py-20 px-8 relative overflow-hidden"
+            style="background: "
           >
             <div
               class="max-w-md mx-auto relative z-10 h-full flex flex-col justify-center"
@@ -350,7 +349,7 @@ onBeforeUnmount(() => {
               <h3 class="font-syne font-bold text-3xl mb-4 text-off-black">
                 Festivals &amp; Screenings
               </h3>
-              <p class="font-roboto text-gray-600 mb-8 leading-relaxed">
+              <p class="font-roboto text-off-black mb-8 leading-relaxed">
                 For press kits, screener links, and festival programming
                 inquiries, please contact our production team directly.
               </p>
@@ -382,3 +381,9 @@ onBeforeUnmount(() => {
     </footer>
   </div>
 </template>
+
+<style scoped>
+.bracelet-image {
+  filter: brightness(0.8) drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+}
+</style>
