@@ -346,20 +346,8 @@ onBeforeUnmount(() => {
             class="flex-1 py-20 px-8 bg-white relative overflow-hidden"
           >
             <div
-              class="absolute top-0 right-0 font-syne font-black text-9xl text-gray-100 -z-0 opacity-50 select-none leading-none -mt-4 -mr-4"
-            >
-              CONTACT
-            </div>
-
-            <div
               class="max-w-md mx-auto relative z-10 h-full flex flex-col justify-center"
             >
-              <h4
-                class="font-mono text-sm text-gray-400 uppercase tracking-[0.2em] mb-4"
-              >
-                Inquiries
-              </h4>
-
               <h3 class="font-syne font-bold text-3xl mb-4 text-off-black">
                 Festivals &amp; Screenings
               </h3>
