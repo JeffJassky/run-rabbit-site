@@ -135,7 +135,7 @@ onBeforeUnmount(() => {
         class="min-h-screen flex flex-col items-center justify-center pt-20 pb-10 px-4 relative overflow-hidden"
       >
         <div
-          class="absolute -top-[0%] -right-[20%] md:-right-[10%] w-[80vw] md:w-[35vw] pointer-events-none opacity-90 select-none z-0 rotate-12"
+          class="absolute -bottom-[0%] -right-[20%] md:-right-[10%] w-[80vw] md:w-[35vw] pointer-events-none select-none z-0 rotate-12"
         >
           <img
             src="/prison-bracelet.png"
@@ -143,17 +143,6 @@ onBeforeUnmount(() => {
             class="w-full h-auto object-contain drop-shadow-2xl"
           />
         </div>
-
-        <div
-          class="absolute -bottom-[0%] -left-[10%] w-[70vw] md:w-[35vw] pointer-events-none opacity-90 select-none z-0 -rotate-12 translate-y-1/4"
-        >
-          <img
-            src="/mallo-cups.webp"
-            alt="Mallo Cup"
-            class="w-full h-auto object-contain drop-shadow-2xl"
-          />
-        </div>
-
         <div
           class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 origin-center z-20"
         >
@@ -226,9 +215,19 @@ onBeforeUnmount(() => {
 
       <section
         :id="sectionId.TRAILER"
-        class="py-20 px-4 md:px-8 border-t-4 border-off-black"
+        class="py-20 px-4 md:px-8 border-t-4 border-off-black relative overflow-visible"
       >
-        <div class="container mx-auto max-w-6xl">
+        <div
+          class="absolute bottom-[-23%] md:bottom-[-22%] -left-[10%] w-[70vw] md:w-[35vw] pointer-events-none select-none z-0 -rotate-12"
+        >
+          <img
+            src="/mallo-cups.webp"
+            alt="Mallo Cup"
+            class="w-full h-auto object-contain drop-shadow-2xl"
+          />
+        </div>
+
+        <div class="container mx-auto max-w-6xl relative z-10">
           <div class="mb-8 flex items-end gap-4">
             <h2
               class="font-syne font-black text-4xl md:text-6xl text-off-black uppercase leading-none"
