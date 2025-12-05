@@ -160,9 +160,9 @@ onBeforeUnmount(() => {
             RUN RABBIT
           </h1>
 
-          <div class="mt-8 md:mt-12 flex flex-col items-center space-y-8">
+          <div class="mt-7 md:mt-12 flex flex-col items-center space-y-8">
             <span
-              :class="['inline-block font-mono bg-off-black text-off-white px-2 py-1 uppercase font-bold tracking-wide', 'text-lg md:text-2xl px-4 py-2 rotate-1']"
+              :class="['inline-block font-mono bg-off-black text-off-white px-2 py-1 uppercase font-bold tracking-wide', 'text-md md:text-2xl px-4 py-2 rotate-1']"
               >Rebel with a cause</span
             >
 
@@ -384,6 +384,6 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .bracelet-image {
-  filter: brightness(0.8) drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  filter: brightness(0.8) drop-shadow(0 50px 25px rgba(0, 0, 0, 0.15));
 }
 </style>
